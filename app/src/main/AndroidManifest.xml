@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.root.HaditsSimilarity">
+
+    <application
+        android:name="com.root.HaditsSimilarity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/book"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/book"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="SimilarityHadits.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="5" />
+        <meta-data
+            android:name="AA_DB_MODEL"
+            android:value="com.root.HaditsSimilarity.model.Hadits" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.root.HaditsSimilarity.model.Hadits" />
+
+        <activity android:name="com.root.HaditsSimilarity.activity.MainActivity"></activity>
+        <activity android:name="com.root.HaditsSimilarity.activity.SimilarityActivity" />
+        <activity android:name="com.root.HaditsSimilarity.activity.InputHadits" />
+        <activity android:name="com.root.HaditsSimilarity.activity.SplahScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
